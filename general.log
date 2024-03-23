@@ -176,3 +176,129 @@ AttributeError: 'str' object has no attribute 'get'
 22/Mar/2024 17:28:49 (INFO)- django.server- "GET / HTTP/1.1" 200 1422
 22/Mar/2024 17:30:10 (INFO)- django.server- "GET / HTTP/1.1" 200 1420
 22/Mar/2024 17:30:10 (INFO)- django.server- "GET / HTTP/1.1" 200 1420
+23/Mar/2024 10:45:32 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:45:32 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:48:33 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:48:33 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:51:04 (WARNING)- django.request- Bad Request: /api/register
+23/Mar/2024 10:51:04 (WARNING)- django.request- Bad Request: /api/register
+23/Mar/2024 10:51:04 (WARNING)- django.server- "POST /api/register HTTP/1.1" 400 78
+23/Mar/2024 10:51:04 (WARNING)- django.server- "POST /api/register HTTP/1.1" 400 78
+23/Mar/2024 10:52:38 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+23/Mar/2024 10:52:38 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+23/Mar/2024 10:52:39 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:52:39 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:52:45 (ERROR)- django.request- Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jatinkoli/Desktop/Codes/autheSys/users/views.py", line 10, in post
+    seralizer.is_valid(raise_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `passwordn` is not valid for model `User`.
+23/Mar/2024 10:52:45 (ERROR)- django.request- Internal Server Error: /api/register
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jatinkoli/Desktop/Codes/autheSys/users/views.py", line 10, in post
+    seralizer.is_valid(raise_exception=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `passwordn` is not valid for model `User`.
+23/Mar/2024 10:52:45 (ERROR)- django.server- "POST /api/register HTTP/1.1" 500 133026
+23/Mar/2024 10:52:45 (ERROR)- django.server- "POST /api/register HTTP/1.1" 500 133026
+23/Mar/2024 10:53:35 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/serializers.py changed, reloading.
+23/Mar/2024 10:53:35 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/serializers.py changed, reloading.
+23/Mar/2024 10:53:36 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:53:36 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+23/Mar/2024 10:53:47 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 45
+23/Mar/2024 10:53:47 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 45
+23/Mar/2024 10:54:22 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 47
+23/Mar/2024 10:54:22 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 47
