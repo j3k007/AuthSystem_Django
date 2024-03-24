@@ -302,3 +302,109 @@ django.core.exceptions.ImproperlyConfigured: Field name `passwordn` is not valid
 23/Mar/2024 10:53:47 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 45
 23/Mar/2024 10:54:22 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 47
 23/Mar/2024 10:54:22 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 47
+24/Mar/2024 06:50:07 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 06:50:07 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 06:50:14 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 53
+24/Mar/2024 06:50:14 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 53
+24/Mar/2024 06:50:30 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 49
+24/Mar/2024 06:50:30 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 49
+24/Mar/2024 06:50:44 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 49
+24/Mar/2024 06:50:44 (INFO)- django.server- "POST /api/register HTTP/1.1" 200 49
+24/Mar/2024 08:13:44 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:13:44 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:14:49 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/urls.py changed, reloading.
+24/Mar/2024 08:14:49 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/urls.py changed, reloading.
+24/Mar/2024 08:14:50 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:14:50 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:15:14 (ERROR)- django.request- Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jatinkoli/Desktop/Codes/autheSys/users/views.py", line 21, in post
+    email = request.data['email']
+            ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'email'
+24/Mar/2024 08:15:14 (ERROR)- django.request- Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jatinkoli/Desktop/Codes/autheSys/users/views.py", line 21, in post
+    email = request.data['email']
+            ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'email'
+24/Mar/2024 08:15:14 (ERROR)- django.server- "POST /api/login HTTP/1.1" 500 86864
+24/Mar/2024 08:15:14 (ERROR)- django.server- "POST /api/login HTTP/1.1" 500 86864
+24/Mar/2024 08:16:14 (ERROR)- __name__- Password didn't matched !
+NoneType: None
+24/Mar/2024 08:16:14 (WARNING)- django.request- Forbidden: /api/login
+24/Mar/2024 08:16:14 (WARNING)- django.request- Forbidden: /api/login
+24/Mar/2024 08:16:14 (WARNING)- django.server- "POST /api/login HTTP/1.1" 403 38
+24/Mar/2024 08:16:14 (WARNING)- django.server- "POST /api/login HTTP/1.1" 403 38
+24/Mar/2024 08:17:31 (ERROR)- __name__- Password didn't matched !
+NoneType: None
+24/Mar/2024 08:17:31 (WARNING)- django.request- Forbidden: /api/login
+24/Mar/2024 08:17:31 (WARNING)- django.request- Forbidden: /api/login
+24/Mar/2024 08:17:31 (WARNING)- django.server- "POST /api/login HTTP/1.1" 403 38
+24/Mar/2024 08:17:31 (WARNING)- django.server- "POST /api/login HTTP/1.1" 403 38
+24/Mar/2024 08:17:37 (INFO)- django.server- "POST /api/login HTTP/1.1" 200 33
+24/Mar/2024 08:17:37 (INFO)- django.server- "POST /api/login HTTP/1.1" 200 33
+24/Mar/2024 08:18:25 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 08:18:25 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 08:18:25 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:18:25 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:18:41 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 08:18:41 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 08:18:42 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:18:42 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:50:09 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:50:09 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:50:21 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 08:50:21 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:10:14 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:10:14 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:21:54 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:21:54 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:22:37 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 09:22:37 (INFO)- django.utils.autoreload- /Users/jatinkoli/Desktop/Codes/autheSys/users/views.py changed, reloading.
+24/Mar/2024 09:22:38 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
+24/Mar/2024 09:22:38 (INFO)- django.utils.autoreload- Watching for file changes with StatReloader
